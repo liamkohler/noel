@@ -52,12 +52,15 @@ body {
 .section {
   display: flex;
   justify-content: space-between;
+  text-align: justify;
   p {
     width: 37vw;
-    text-align: justify;
   }
   .container {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 50vh;
     justify-content: space-between;
   }
 }
@@ -85,7 +88,7 @@ body {
 }
 
 .slider-2 {
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 // strolling text
