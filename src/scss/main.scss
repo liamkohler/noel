@@ -1,0 +1,111 @@
+$dark-red: #7d0a0a;
+$light-red: #bf3131;
+$dark-beige: #ead196;
+$light-beige: #f3edc8;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: $light-beige;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2rem;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+video {
+  display: block;
+}
+
+h1,
+h2 {
+  color: $light-beige;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-variant: small-caps;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 10rem;
+}
+
+body {
+  background-color: $light-beige;
+}
+
+.main-card {
+  margin: 5vh 5vw;
+  padding: 10px 80px;
+  width: 90vw;
+  height: 90vh;
+  background-color: $dark-red;
+  border-radius: 30px;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  p {
+    width: 37vw;
+    text-align: justify;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.separation {
+  background-color: $light-beige;
+  width: 2px;
+  height: 400px;
+  margin-left: 25px;
+}
+
+.img-container {
+  width: 400px;
+  height: 400px;
+  background-image: url(../img/motif.svg);
+  border-radius: 50% 50% 0 0;
+  border: solid 2px $light-beige;
+}
+
+.slider-2 {
+  margin-top: 20px;
+}
+
+// strolling text
+
+.slider {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #fff;
+  font-size: 2rem;
+  position: relative;
+}
+
+.text-container {
+  display: flex;
+  animation: scrolling 10s linear infinite;
+}
+
+.text-container span {
+  margin-right: 1rem;
+}
+
+@keyframes scrolling {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
