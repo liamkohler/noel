@@ -69,12 +69,19 @@ body {
   margin-left: 25px;
 }
 
+.img-background {
+  width: 400px;
+  height: 400px;
+  background-color: $light-beige;
+}
+
 .img-container {
   width: 400px;
   height: 400px;
   background-image: url(../img/motif.svg);
-  border-radius: 50% 50% 0 0;
+  border-radius: 50% 0;
   border: solid 2px $light-beige;
+  box-shadow: 0 0 0 20px $dark-red;
 }
 
 .slider-2 {
